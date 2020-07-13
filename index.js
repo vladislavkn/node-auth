@@ -21,7 +21,7 @@ app.post("/api/login", (req, res) => {
     _id: "fdgjo34j5435ko",
   };
 
-  jwt.sign({ user }, "secretKey", (err, token) => {
+  jwt.sign({ mockUser }, "secretKey", (err, token) => {
     if (err) console.log(err);
     res.json({
       message: "Successful",
